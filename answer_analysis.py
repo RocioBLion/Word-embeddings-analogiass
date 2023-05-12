@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Cargar el archivo CSV
-df = pd.read_csv('respuestas_finales2.csv')
+df = pd.read_csv('analogies_answers.csv')
 
 # Calcular el total de respuestas por estimulo
 total_respuestas = df.groupby('estimulo')['count'].sum()
@@ -13,3 +13,4 @@ df['porcentaje'] = df.apply(lambda row: row['count'] / total_respuestas[row['est
 df.to_csv('respuestas_finales2.csv', index=False)
 
 df
+
