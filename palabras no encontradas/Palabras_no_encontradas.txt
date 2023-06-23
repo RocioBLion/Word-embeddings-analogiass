@@ -1,2 +1,0 @@
-Palabras no encontradas en el embedding de FastText SUC:
-['China', 'Cuba', 'Uruguay', 'Estados Unidos', 'Japón', 'Paraguay', 'Buenos Aires', 'Brasil', 'Francia', 'Asia', 'Argentina', 'París', 'lápiz labial', nan, 'Montevideo', 'Rusia', 'Roma']
