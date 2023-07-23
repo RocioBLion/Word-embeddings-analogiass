@@ -14,6 +14,13 @@ analogias_df['rank'] = analogias_df.groupby('cue')['count'].rank(ascending=False
 total_respuestas = analogias_df.groupby('cue')['response'].transform('count')
 analogias_df['porcentaje'] = (analogias_df['count'] / total_respuestas) * 100
 
+#índices de filas que tienen rango mínimo (rango 1)
+idx = analogias_df.groupby(['cue'])['rank'].idxmin()
+# me quedo únicamente con esas filas
+analogias_df = analogias_df.loc[idx]
+
+
+
 analogias_df.to_csv('analogies_answers.csv', index=False)
 
 # Pasar las palabras a minusculas
