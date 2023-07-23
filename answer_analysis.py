@@ -2,18 +2,16 @@ import pandas as pd
 from gensim.models import KeyedVectors
 import numpy as np
 
-analogias_df = pd.read_csv('C:\\Users\\bruno\\Desktop\\REPO CABANA\\WordEmbeddings-Analogias\\analogies_answers.csv')
+analogias_df = pd.read_csv('analogies_answers.csv')
 
-#embeddings_WIKI = KeyedVectors.load_word2vec_format('WordEmbeddings-Analogias/embeddings/wiki.es.vec', limit=None)
-embeddings_SUC = KeyedVectors.load_word2vec_format('WordEmbeddings-Analogias/embeddings/embeddings-l-model.vec', limit=None)
-embeddings_SWOW = KeyedVectors.load_word2vec_format('WordEmbeddings-Analogias/embeddings/swow.embedding.was.26-04-2022.vec', limit=None)
+#embeddings_WIKI = KeyedVectors.load_word2vec_format('embeddings/wiki.es.vec', limit=None)
+embeddings_SUC = KeyedVectors.load_word2vec_format('embeddings/embeddings-l-model.vec', limit=None)
+embeddings_SWOW = KeyedVectors.load_word2vec_format('embeddings/swow.embedding.was.26-04-2022.vec', limit=None)
 lower_embeddings_SWOW = KeyedVectors(vector_size=embeddings_SWOW.vector_size)
+#embeddings_SBWC = KeyedVectors.load_word2vec_format('embeddings/SBW-vectors-300-min5.txt', limit=None)
+#embeddings_Glove = KeyedVectors.load_word2vec_format('embeddings/glove-sbwc.i25.vec', limit=None)
 
-#estos no cargan
-#embeddings_SBWC = KeyedVectors.load_word2vec_format('WordEmbeddings-Analogias/embeddings/SBW-vectors-300-min5.txt', limit=None)
-#embeddings_Glove = KeyedVectors.load_word2vec_format('WordEmbeddings-Analogias/embeddings/glove-sbwc.i25.vec', limit=None)
-
-# Obtener todos los vectores y palabras del SWOW en listas
+# Vectores y palabras del SWOW
 palabras = list(embeddings_SWOW.key_to_index.keys())
 vectores = list(embeddings_SWOW.vectors)
 
@@ -31,9 +29,9 @@ analogias_df['rank'] = analogias_df.groupby('cue')['count'].rank(ascending=False
 total_respuestas = analogias_df.groupby('cue')['response'].transform('count')
 analogias_df['porcentaje'] = (analogias_df['count'] / total_respuestas) * 100
 
-#indices de filas que tienen rango minimo (rango 1)
+# Indices de filas que tienen rango minimo (rango 1)
 idx = analogias_df.groupby(['cue'])['rank'].idxmin()
-# me quedo unicamente con esas filas
+# Me quedo unicamente con esas filas
 analogias_df = analogias_df.loc[idx]
 
 analogias_df.to_csv('analogies_answers.csv', index=False)
@@ -44,7 +42,6 @@ analogias_df['targetEjemplo'] = analogias_df['targetEjemplo'].apply(lambda x: st
 analogias_df['cue'] = analogias_df['cue'].apply(lambda x: str(x).lower())
 
 # Realizar los reemplazos 
-
 analogias_df['cueEjemplo'] = analogias_df['cueEjemplo'].str.replace('lápiz labial', 'labial').replace('estados unidos', 'eeuu').replace('buenos aires', 'bsas')
 analogias_df['targetEjemplo'] = analogias_df['targetEjemplo'].str.replace('lápiz labial', 'labial').replace('estados unidos', 'eeuu').replace('buenos aires', 'bsas')
 analogias_df['cue'] = analogias_df['cue'].str.replace('lápiz labial', 'labial').replace('estados unidos', 'eeuu').replace('buenos aires', 'bsas')
@@ -74,7 +71,6 @@ todas_predicciones = [calcular_predicciones(e, analogias_df, K) for e in lista_d
 def calcular_topK_metricas(predicciones, analogias_df):
     analogias_df['response'] = analogias_df['response'].fillna('')
     analogias_df['response'] = analogias_df['response'].apply(lambda x: str(x))
-
     topK_metricas = []
     for i, prediccion in enumerate(predicciones):
         respuesta_humana = analogias_df.iloc[i]['response'].lower()
