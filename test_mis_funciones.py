@@ -19,9 +19,8 @@ class TestMetricasTopK(unittest.TestCase):
     def test_metricas_topK(self):
         # definir las métricas top-K esperadas para las predicciones 
         valores_esperados = [0.17567567567567569]  # metrica obtenida para WIKI
-        # toma un conjunto de predicciones como entrada
 
-        # Calcula las métricas top-K tomando las predicciones y la resp humana
+        # Calcula las métricas top-K tomando las predicciones y el dataframe
         topK_metrica = metricas_topK(self.todas_predicciones[0], self.analogias_df_ejemplo)
 
         self.assertAlmostEqual(topK_metrica, valores_esperados[0], delta=1e-6)  # Compara los valores esperados y el obtenido
