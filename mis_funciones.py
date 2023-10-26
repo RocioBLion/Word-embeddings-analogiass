@@ -3,15 +3,15 @@ import numpy as np
 # Funcion para calcular las predicciones. 
 palabras_no_encontradas = []
 # lista vacia para las palabras no encontradas.
-def calcular_predicciones(embedding, analogias_df, K):
-    predicciones = [] # lista para las predicciones. 
+def calcular_predicciones(embedding, analogias_df, K_fijo):
+    predicciones = []  # Lista para las predicciones.
     for index, row in analogias_df.iterrows():
         cueEjemplo = row['cueEjemplo']
         targetEjemplo = row['targetEjemplo']
         cue = row['cue']
 
         try:
-            resultado = embedding.most_similar(positive=[targetEjemplo, cue], negative=[cueEjemplo], topn=K)
+            resultado = embedding.most_similar(positive=[targetEjemplo, cue], negative=[cueEjemplo], topn=K_fijo)
             predicciones.append([palabra for palabra, _ in resultado]) # se agregan las predicciones a la lista vacia. 
         except KeyError as e:
             print(f"Una de las palabras no está en el embedding: {e}")
