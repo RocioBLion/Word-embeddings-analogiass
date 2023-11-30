@@ -17,7 +17,7 @@ def calcular_predicciones(embedding, analogias_df, K_fijo):
             palabras_no_encontradas.append(str(e).split("'")[1]) # se agrega la palabra no encontrada a la lista palabras_no_encontradas
     return predicciones  # devuelve la lista de predicciones.
 
-def metricas_topK(predicciones, analogias_df,K):
+def metricas_topK(predicciones, analogias_df, K):
     analogias_df['response'] = analogias_df['response'].fillna('') # se llenan los valores nulos en la columna 'response'
     analogias_df['response'] = analogias_df['response'].apply(lambda x: str(x)) # chequeamos de que todos los valores sean strings
     topK_metricas = [] # lista que va a almacenar las métricas calculadas 
