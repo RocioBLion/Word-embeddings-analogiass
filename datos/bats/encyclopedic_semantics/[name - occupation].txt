@@ -1,0 +1,63 @@
+andersen escritor
+aristóteles filósofo
+balzac escritor
+beethoven compositor
+césar emperador
+colón explorador
+confucio filósofo
+dante poeta
+darwin naturalista
+depp actor
+descartes filósofo
+dickens escritor
+edison inventor
+einstein físico
+euler matemático
+goethe poeta
+hawking físico
+haydn compositor
+hegel filósofo
+hitler dictador
+hume filósofo
+jolie actriz
+kant filósofo
+kepler matemático
+lincoln presidente
+locke filósofo
+marx filósofo
+maxwell físico
+mencio filósofo
+moisés profeta
+mozart compositor
+napoleón emperador
+newton físico
+pacino actor
+pascal matemático
+picasso pintor
+platón filósofo
+rafael pintor
+rembrandt pintor
+rousseau escritor
+schwarzenegger actor
+shakespeare dramaturgo
+spinoza filósofo
+stalin dictador
+strauss compositor
+tolstoi escritor
+truman presidente
+wagner compositor
+wittgenstein filósofo
+gandhi activista
+borges escritor 
+mandela activista 
+gardel cantante  
+chomsky lingüista
+escobar narcotraficante 
+senna automovilista  
+castro dictador 
+guevara político
+
+
+
+
+

@@ -1,0 +1,57 @@
+enojada enojadísima
+barata baratísima
+inteligente inteligentísima
+rápida rapidísima
+lenta lentísima
+costosa costosísima
+linda lindísima
+densa densísima
+dura durísima
+blanda blandísima
+tonta tontísima
+jodida jodidísima
+hábil habilísima
+feliz felicísima
+flaca flaquisima
+sana sanísima
+salada saladísima
+dulce dulcísima
+grande grandísima
+llena llenísima
+perezosa perezosísima
+larga larguísima
+afortunada afortunadísima
+profunda profundísima
+ancha anchísima
+liviana livianísima
+pesada pesadísima
+orgullosa orgullosísima
+aburrida aburridísima
+pura purísima
+rara rarísima
+arriesgada arriesgadísima
+grosera groserísima
+triste tristísima
+bella bellísima
+gruesa gruesísima
+gorda gordísima
+relajada relajadísima
+fina finísima
+contenta contentísima
+extraña extrañísima
+complicada complicadísima
+fuerte fuertísima
+grave gravísima
+importante importantísima
+sabrosa sabrosísima
+pequeña pequeñísima
+difícil dificilísima
+fea feísima
+mojada mojadísima
+rica riquísima
+rara rarísima
+
+
+
+
+

@@ -1,0 +1,42 @@
+capaz incapaz
+aceptable inaceptable
+afectado inafectado
+evitable inevitable
+consciente inconsciente
+creíble increíble
+sesgado imparcial
+cierto incierto
+cómodo incómodo
+condicional incondicional
+controlado incontrolado
+deseable indeseable
+empleado desempleado
+esperado inesperado
+terminado inacabado
+olvidable inolvidable
+afortunado desafortunado
+feliz infeliz
+interrumpido ininterrumpido
+conocido desconocido
+lícito ilícito
+notado desapercibido
+pagado impago
+agradable desagradable
+popular impopular
+predecible impredecible
+publicado inédito
+realista irrealista
+racional irracional 
+satisfactorio insatisfactorio
+específico inespecífico
+adecuado inadecuado
+sostenible insostenible
+habitual inusual
+velado develado
+deseado indeseado
+
+
+
+
+
+

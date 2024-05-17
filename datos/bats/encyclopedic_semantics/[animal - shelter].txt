@@ -1,0 +1,50 @@
+hormiga hormiguero 
+simio arboleda 
+babuino arboleda 
+murciélago cueva
+oso guarida
+castor madriguera
+vaca establo 
+chimpancé arboleda 
+chinchilla nido 
+cucaracha nido
+grillo nido
+cocodrilo río 
+cuervo nido 
+perro guarida 
+delfín mar 
+pato estanque 
+pez mar
+zorro madriguera
+hámster nido 
+erizo nido 
+hipopótamo río
+avispa nido
+caballo establo 
+insecto nido 
+león guarida 
+langosta nido
+topo madriguera 
+mono arboleda 
+ratón nido 
+cerdo corral
+conejo madriguera 
+rata nido 
+cuervo nido 
+escorpión nido 
+foca guarida 
+serpiente nido
+araña telaraña
+termita termitero 
+tigre guarida 
+trucha río 
+avispa nido
+ballena mar 
+lobo guarida
+marmota madriguera
+
+
+
+
+
+
