@@ -1,4 +1,4 @@
-descurbir descubrimiento 
+descubrir descubrimiento 
 sentir sentimiento 
 ungir ungimiento 
 abatir abatimiento 
@@ -38,4 +38,3 @@ reforzar reforzamiento
 acoplar acoplamiento 
 almacenar almacenamiento 
 avistar avistamiento 
-
